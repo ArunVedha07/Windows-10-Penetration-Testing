@@ -10,15 +10,12 @@ This repository documents the identification and exploitation of the MS17-010 (E
 - Gained administrative shell access on the target system  
 
 ## Repository Structure
-/screenshots — Evidence of each exploitation phase
-/notes — Commands and observations
-/report — Technical documentation
+- /screenshots — Evidence of each exploitation phase
+- /notes — Commands and observations
+- /report — Technical documentation
 
 ## Tools & Technologies
 - Kali Linux  
 - Nmap + NSE scripts  
 - Metasploit Framework  
 - VirtualBox lab environment  
-
-## Purpose
-This project was conducted strictly for educational purposes in an isolated and authorized lab environment.
